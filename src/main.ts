@@ -2,8 +2,6 @@ export { };
 
 var url:string = "https://favqs.com/api/qotd";
 
-console.log("Hello World!");
-
 const QuoteElement: HTMLSpanElement = document.querySelector("#quote") as HTMLSpanElement;
 const AuthorElement: HTMLSpanElement = document.querySelector("#author") as HTMLSpanElement;
 

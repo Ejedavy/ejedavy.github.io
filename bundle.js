@@ -1,13 +1,1 @@
-var url = "https://favqs.com/api/qotd";
-console.log("Hello World!");
-var QuoteElement = document.querySelector("#quote");
-var AuthorElement = document.querySelector("#author");
-function getData() {
-    fetch(url).then(function (response) {
-        return response.json();
-    }).then((function (data) {
-        QuoteElement.textContent = "\"" + data.quote.body + "\"";
-        AuthorElement.textContent = "-" + data.quote.author;
-    }));
-}
-getData();
+var t=document.querySelector("#quote"),e=document.querySelector("#author");fetch("https://favqs.com/api/qotd").then((function(t){return t.json()})).then((function(o){t.textContent='"'+o.quote.body+'"',e.textContent="-"+o.quote.author}));
