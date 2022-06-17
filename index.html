@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--CSS Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- Animate CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>David Eje | Web Developer</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <h1>DAVID EJE</h1>
+        <blockquote class="quotes">
+            <h4>Quote of the day:</h4>
+            <br>
+            <span id = "quote"></span>
+            <br>
+            <span id = "author"></span>
+        </blockquote>
+        <ul class="navigation">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="burger-menu" id="burger-menu">
+          <ion-icon class="bars" name="menu-outline"></ion-icon>
+        </button>
+    </nav>
+
+
+    <section class="hero" id="about">
+        <img src="assets/images/me.jpg" alt="dave_eje" loading="lazy" class="hero-img" />
+        <div class="bio animate__animated animate__shakeX">
+            <h2 class="bio-title">About Me</h2>
+            <p class="bio-text">I am an Innopolis University Computer Science Undergraduate. I am a passionate learner. A full stack machine learning engineer with 3+ years experience in Machine Learning, AWS services and Backend frameworks like Django. I am currently learning
+                React and other frontend frameworks.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- Skills section -->
+    <section class="skills" id="skills">
+        <h2 class="skill-header">My Top Skills</h2>
+
+        <div class="skills-wrapper">
+            <div class="first-set animate__animated animate__pulse">
+                <img src="assets/icons/python.jfif" alt="" loading="lazy" class="icon icon-card" />
+                <img src="assets/icons/django.png" alt="" loading="lazy" class="icon icon-card" />
+                <img src="assets/icons/pytorch.png" alt="" loading="lazy" class="icon icon-card" />
+            </div>
+
+            <div class="second-set animate__animated animate__pulse">
+                <img src="assets/icons/html.png" alt="" loading="lazy" class="icon icon-card" />
+                <img src="assets/icons/tensorflow.png" alt="" loading="lazy" class="icon icon-card" />
+                <img src="assets/icons/mysql.png" alt="" loading="lazy" class="icon icon-card" />
+            </div>
+        </div>
+    </section>
+    <!-- Projects section -->
+    <section class="projects" id="projects">
+        <h2 class="projects-title">Some of my Recent Projects</h2>
+        <div class="projects-container">
+            <div class="project-container project-card">
+                <img src="assets/images/stock.jfif" alt="stock-market" loading="lazy" class="project-pic" />
+                <h3 class="project-title">Stock Market Predictor</h3>
+                <p class="project-details">
+                    This is a stock market predictor, predicting the Tesla stock market. It had a 80% accuracy on the prediction.
+                </p>
+                <a href="#" target="_blank" class="project-link">Check it Out</a>
+            </div>
+            <div class="project-container project-card">
+                <img src="assets/images/bot.jfif" alt="chat" loading="lazy" class="project-pic" />
+                <h3 class="project-title">AI Chat Bot</h3>
+                <p class="project-details">
+                    This is a chat bot created using Artificial Intelligence and natural language processing. The bot was able to have a descent conversation.
+                </p>
+                <a href="#" target="_blank" class="project-link">Check it Out</a>
+            </div>
+            <div class="project-container project-card">
+                <img src="assets/images/chat.svg" alt="learning" loading="lazy" class="project-pic" />
+                <h3 class="project-title">EdTech E-learning Platform</h3>
+                <p class="project-details">
+                    This is a chat app built using django and flutter. It supports video call, delete message, voice call, replies.
+                    <a href="#" target="_blank" class="project-link">Check it Out</a>
+            </div>
+        </div>
+    </section>
+    <!-- Contact section -->
+
+    <section class="contact" id="contact">
+        <h2>Get In Touch With Me</h2>
+        <div class="contact-form-container">
+            <div class="contact-form">
+                <form action="https://www.google.com" method="POST">
+                    <div class="form-control">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="sender-name" placeholder="Enter Your Name" class="input-field" required />
+                    </div>
+                    <div class="form-control">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="sender-email" placeholder="Enter Your Email" class="input-field" required />
+                    </div>
+                    <div class="form-control">
+                        <label for="message">Message</label>
+                        <textarea id="message" cols="60" rows="10" placeholder="Enter Your Message" name="message" class="input-field" required></textarea>
+                    </div>
+                    <input type="submit" value="Submit" id="submit-btn" class="submit-btn" />
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div class="socials">
+        <a href="https://t.me/David_ej" target="_blank"><img src="assets/icons/telegram.jfif" alt="Telegram" loading="lazy" class="socicon" /></a>
+        <a href="https://www.instagram.com/" target="_blank"><img src="assets/icons/instagram.jfif" alt="Instagram" loading="lazy" class="socicon" /></a>
+        <a href="https://www.linkedin.com/" target="_blank"><img src="assets/icons/linkedin.png" alt="Linkedin" loading="lazy" class="socicon" /></a>
+        <a href="https://github.com/Ejedavy" target="_blank"><img src="assets/icons/github.png" alt="Github" class="socicon" /></a>
+
+        <!-- Ion icons scripts -->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="bundle.js"></script>
+</body>
+
+</html>
